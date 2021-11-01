@@ -1,0 +1,143 @@
+.header {
+    display: flex;
+    justify-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 1090px; */
+    /* margin-left: 130px; */
+    margin-top: 32px;
+    margin-bottom: 33px;
+}
+
+.casaveloce{
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.select{
+    display: flex;
+    justify-content: center;
+    width: 990px;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.city{
+    cursor: pointer;
+    width: 0px;
+    height: 0px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F6F6F5;
+    margin-right: 12px;
+    color: #000000;
+}
+
+.priorities{
+    cursor: pointer;
+    width: 0px;
+    height: 0px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F6F6F5;
+    margin-right: 12px;
+    color: #000000;
+}
+
+.settings{
+    cursor: pointer;
+    width: 0px;
+    height: 0px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 8px;
+    color: #000000;
+
+    position: relative;
+    display: inline-block;
+    background-color: #F6F6F5;
+    -webkit-appearance: none;
+    overflow: hidden;
+}
+
+.settings:after{
+    content: "...";
+    position: absolute;
+    padding: 0 8px;
+    font-size: 12px;
+    margin-right: 8px;
+    margin-top: 4px;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+svg{
+    margin-left: -9px;
+    margin-top: 1px;
+    margin-right: 10px;
+}
+
+
+.btn {
+    cursor: pointer;
+    font-size: 0.9em;
+    width: 114.33px;
+    margin-right: 10px;
+    margin-top: -10px;
+    height: 33px;
+    background: #F6F6F5;
+    border-radius: 250px;
+    border: none;
+}
+
+
+.wrap{
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 200px ;
+    grid-column-gap: 28px;
+    grid-row-gap: 40px;
+    justify-content: center;
+}
+
+
+@media (min-width: 600px){
+    .wrap{
+    grid-template-columns: 200px 200px 200px 200px 200px ;
+    }
+
+    .city{
+        width: 138px;
+        height: 32px;
+    }
+
+    .priorities{
+        width: 165px;
+        height: 32px;
+    }
+
+    .settings{
+        width: 170px;
+        height: 32px;
+    }
+
+    .casaveloce{
+        width: 60px;
+    }
+
+    .btn{
+        width: 124.33px;
+    }
+}
+
+
+
